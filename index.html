@@ -36,7 +36,6 @@
        }
 
        .logo button {
-           border: none;
             background-color: black;
             color: white;
             width: 40px;
@@ -81,10 +80,29 @@
             background-color: black;
             color: white;
        }
+
+       @media (max-width:680px) {
+         header {
+            display: flex;
+            flex-direction: column;
+         }
+         section {
+            display: flex;
+            flex-direction: column;
+         }
+         .div1 > img {
+            width: 300px;
+         }
+
+         
+         
+       }
+
     </style>
 </head>
 <body>
     <header>
+
         <div class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
