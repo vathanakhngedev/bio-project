@@ -36,6 +36,16 @@
        }
 
        .logo button {
+            border: none;
+            background-color: black;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+       }
+
+       .logo1 button {
+            border: none;
             background-color: black;
             color: white;
             width: 40px;
@@ -81,28 +91,68 @@
             color: white;
        }
 
-       @media (max-width:680px) {
-         header {
-            display: flex;
-            flex-direction: column;
-         }
-         section {
-            display: flex;
-            flex-direction: column;
-         }
-         .div1 > img {
-            width: 300px;
-         }
-
-         
-         
+       @media  ( min-width :1023px) {
+        .logo1 {
+            display: none;
+        }
+        .menu {
+            display: none;
+        }
+        
        }
+
+       @media only screen and (min-width: 768px )and (max-width: 1023px) {
+        header {
+            padding: 0px 10px;
+        }
+        .div1 > img {
+            width: 340px;
+        }
+
+        .navbar ul {
+        display: none;
+        }
+        
+        .sc-media {
+        display: none;
+        }
+        .logo {
+        display: none;
+        }
+       }
+       
+       @media only screen and (min-width: 320px) and ( max-width:768px) {
+        header {
+            padding: 0px 10px;
+        }
+        .logo {
+            display: none;
+        }
+        .navbar {
+            display: none;
+        }
+        .sc-media {
+            display: none;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+        }
+        .div1 img {
+            width:358px;
+        }
+       }
+      
+         
+
 
     </style>
 </head>
 <body>
     <header>
-
+        <div class="logo1">
+            <button>CB</button>
+        </div>
         <div class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -122,6 +172,9 @@
                 <li><i class="fa-brands fa-tiktok"></i></li>
                 <li><i class="fa-brands fa-github"></i></li>
             </ul>
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </header>
     <section>
